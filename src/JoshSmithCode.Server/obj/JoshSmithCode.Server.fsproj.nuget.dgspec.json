@@ -1,0 +1,174 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/deathmetaljoshy/Code/JoshSmithCode/src/JoshSmithCode.Server/JoshSmithCode.Server.fsproj": {}
+  },
+  "projects": {
+    "/Users/deathmetaljoshy/Code/JoshSmithCode/src/JoshSmithCode.Client/JoshSmithCode.Client.fsproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/deathmetaljoshy/Code/JoshSmithCode/src/JoshSmithCode.Client/JoshSmithCode.Client.fsproj",
+        "projectName": "JoshSmithCode.Client",
+        "projectPath": "/Users/deathmetaljoshy/Code/JoshSmithCode/src/JoshSmithCode.Client/JoshSmithCode.Client.fsproj",
+        "packagesPath": "/Users/deathmetaljoshy/.nuget/packages/",
+        "outputPath": "/Users/deathmetaljoshy/Code/JoshSmithCode/src/JoshSmithCode.Client/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/deathmetaljoshy/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Bolero": {
+              "target": "Package",
+              "version": "[0.*, )",
+              "generatePathProperty": true
+            },
+            "Bolero.Build": {
+              "target": "Package",
+              "version": "[0.*, )",
+              "generatePathProperty": true
+            },
+            "Bolero.HotReload": {
+              "target": "Package",
+              "version": "[0.*, )",
+              "generatePathProperty": true
+            },
+            "FSharp.Core": {
+              "target": "Package",
+              "version": "[5.0.0, )",
+              "generatePathProperty": true
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly.DevServer": {
+              "target": "Package",
+              "version": "[5.0.*, )",
+              "generatePathProperty": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Runtime.browser-wasm",
+              "version": "[5.0.4, 5.0.4]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/Cellar/dotnet/5.0.104/libexec/sdk/5.0.104/RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "browser-wasm": {
+          "#import": []
+        }
+      }
+    },
+    "/Users/deathmetaljoshy/Code/JoshSmithCode/src/JoshSmithCode.Server/JoshSmithCode.Server.fsproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/deathmetaljoshy/Code/JoshSmithCode/src/JoshSmithCode.Server/JoshSmithCode.Server.fsproj",
+        "projectName": "JoshSmithCode.Server",
+        "projectPath": "/Users/deathmetaljoshy/Code/JoshSmithCode/src/JoshSmithCode.Server/JoshSmithCode.Server.fsproj",
+        "packagesPath": "/Users/deathmetaljoshy/.nuget/packages/",
+        "outputPath": "/Users/deathmetaljoshy/Code/JoshSmithCode/src/JoshSmithCode.Server/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/deathmetaljoshy/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "/Users/deathmetaljoshy/Code/JoshSmithCode/src/JoshSmithCode.Client/JoshSmithCode.Client.fsproj": {
+                "projectPath": "/Users/deathmetaljoshy/Code/JoshSmithCode/src/JoshSmithCode.Client/JoshSmithCode.Client.fsproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Bolero.HotReload.Server": {
+              "target": "Package",
+              "version": "[0.*, )",
+              "generatePathProperty": true
+            },
+            "Bolero.Server": {
+              "target": "Package",
+              "version": "[0.*, )",
+              "generatePathProperty": true
+            },
+            "FSharp.Core": {
+              "target": "Package",
+              "version": "[5.0.0, )",
+              "generatePathProperty": true
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly.Server": {
+              "target": "Package",
+              "version": "[5.0.*, )",
+              "generatePathProperty": true
+            },
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+              "target": "Package",
+              "version": "[5.0.*, )",
+              "generatePathProperty": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/Cellar/dotnet/5.0.104/libexec/sdk/5.0.104/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

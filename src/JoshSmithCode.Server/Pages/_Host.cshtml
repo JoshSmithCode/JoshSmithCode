@@ -1,0 +1,25 @@
+@page "/"
+@namespace JoshSmithCode.Server
+@using Bolero.Server.RazorHost
+@inject IBoleroHostConfig BoleroHostConfig
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JoshSmithCode</title>
+    <base href="/">
+    <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+    <script src="https://kit.fontawesome.com/b94280710b.js" crossorigin="anonymous"></script>
+    <style>
+      .skill-icon
+        {
+          font-size: 2em;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="main">@(await Html.RenderComponentAsync<JoshSmithCode.Client.Main.MyApp>(BoleroHostConfig))</div>
+    @Html.RenderBoleroScript(BoleroHostConfig)
+  </body>
+</html>
